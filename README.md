@@ -53,7 +53,6 @@ This project highlights the potential of deep learning in medical diagnostics, p
 
 ## Project Links
 
-- **GitHub Repository**: [BreastCancerPredictor](https://github.com/rawan-alwadiya/BreastCancerPredictor)  
 - **Kaggle Notebook**: [View on Kaggle](https://www.kaggle.com/code/rawanalwadeya/breastcancerpredictor-ann-based-diagnostic-tool)  
 - **Live Streamlit App**: [Try it Now](https://breastcancerpredictor-dpjxeyvzje8xdjfbtvbjkh.streamlit.app)
 
