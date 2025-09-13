@@ -1,74 +1,93 @@
-# BreastCancerPredictor: ANN-Based Diagnostic Tool for Early Detection
+# **BreastCancerPredictor: ANN-Based Diagnostic Tool for Early Detection**
 
-BreastCancerPredictor is a deep learning project that uses an artificial neural network (ANN) to predict breast cancer diagnoses (malignant or benign) from 30 diagnostic features in the Breast Cancer Wisconsin dataset.  
-It demonstrates how ANN-based models can be applied in healthcare to create accurate, efficient, and accessible diagnostic tools.
-
----
-
-## Demo
-
-[View LinkedIn Demo Post](https://www.linkedin.com/posts/rawan-alwadeya-17948a305_deeplearning-artificialneuralnetworks-binaryclassification-activity-7362198947546755072-FdN6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3YzG0BAZw48kimDDr_guvq8zXgSjDgk_I)
+BreastCancerPredictor is a deep learning project that applies an **Artificial Neural Network (ANN)** to predict breast cancer diagnoses (**Malignant** or **Benign**) from 30 diagnostic features in the Breast Cancer Wisconsin dataset.  
+The project demonstrates an **end-to-end machine learning workflow** including **EDA, preprocessing, ANN modeling, evaluation, and deployment with Streamlit**.
 
 ---
 
-## Project Overview
+## **Demo**
 
-BreastCancerPredictor uses a complete deep learning pipeline — from EDA and preprocessing to model training, evaluation, and deployment via Streamlit.
+- 🎥 [View LinkedIn Demo Post](https://www.linkedin.com/posts/rawan-alwadeya-17948a305_deeplearning-artificialneuralnetworks-binaryclassification-activity-7362198947546755072-FdN6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3YzG0BAZw48kimDDr_guvq8zXgSjDgk_I)  
+- 🌐 [Try the App Live on Streamlit](https://breastcancerpredictor-dpjxeyvzje8xdjfbtvbjkh.streamlit.app)  
 
-The ANN was trained on 30 numerical features extracted from digitized images of fine needle aspirates (FNA) of breast masses.
-
-### Performance Metrics
-- **Accuracy (Train)**: 98.02%  
-- **Accuracy (Test)**: 97.37%  
-- **Precision**: 98%  
-- **Recall**: 97%  
-- **F1 Score**: 97%
+![Malignant Prediction Example](https://github.com/rawan-alwadiya/BreastCancerPredictor/blob/main/Malignant%20Prediction.png)
 
 ---
 
-## Project Workflow
+## **Project Overview**
 
-- **Exploration & Visualization**: Data distributions, skewness check, outlier detection  
-- **Preprocessing**: Standard feature scaling, label encoding of target variable, train-test split  
-- **Modeling**: ANN with Dense & Dropout layers, trained using EarlyStopping to avoid overfitting  
-- **Evaluation Metrics**: Accuracy, Precision, Recall, F1 Score  
-- **Deployment**: Interactive Streamlit app for real-time predictions
+The workflow includes:  
+- **Exploration & Visualization**: data distributions, skewness check, outlier detection  
+- **Preprocessing**: feature scaling, label encoding, train-test split  
+- **Modeling (ANN)**: Dense & Dropout layers with EarlyStopping  
+- **Evaluation**: accuracy, precision, recall, F1-score  
+- **Deployment**: interactive **Streamlit web app** for real-time predictions  
 
 ---
 
-## Dataset
+## **Objective**
 
-- **Source**: [Breast Cancer Wisconsin Dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)  
+Develop and deploy a robust **ANN-based classifier** to assist in early detection of breast cancer, supporting timely treatment decisions.
+
+---
+
+## **Dataset**
+
+- **Source**: [Breast Cancer Wisconsin Dataset (Kaggle)](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)  
 - **Samples**: 569  
 - **Features**: 30 numerical measurements  
-- **Target Classes**: Malignant / Benign
+- **Target Classes**: Malignant / Benign  
 
 ---
 
-## Real-World Impact
+## **Project Workflow**
 
-This project highlights the potential of deep learning in medical diagnostics, particularly for early detection — helping to improve treatment outcomes and potentially save lives.
+- **EDA & Visualization**: feature distribution analysis, skewness check, outlier detection  
+- **Preprocessing**:  
+  - Standard feature scaling  
+  - Label encoding of target variable  
+  - Train-test split  
+- **Modeling (ANN)**:  
+  - Multiple Dense layers with ReLU activation  
+  - Dropout layers to prevent overfitting  
+  - Output layer with Sigmoid for binary classification  
+- **Training Setup**:  
+  - Optimizer: Adam  
+  - Loss: Binary Crossentropy  
+  - Callback: EarlyStopping (to avoid overfitting)  
 
 ---
 
-## Project Links
+## **Performance Results**
+
+**Artificial Neural Network Classifier:**  
+- **Accuracy (Train)**: 98.02%  
+- **Accuracy (Test)**: 97.37%  
+- **Precision**: 0.98  
+- **Recall**: 0.97  
+- **F1-score**: 0.97  
+
+The model achieved **high accuracy and balanced precision-recall**, making it reliable for breast cancer diagnosis.
+
+---
+
+## **Project Links**
 
 - **Kaggle Notebook**: [View on Kaggle](https://www.kaggle.com/code/rawanalwadeya/breastcancerpredictor-ann-based-diagnostic-tool)  
-- **Live Streamlit App**: [Try it Now](https://breastcancerpredictor-dpjxeyvzje8xdjfbtvbjkh.streamlit.app)
+- **Streamlit App**: [Try it Now](https://breastcancerpredictor-dpjxeyvzje8xdjfbtvbjkh.streamlit.app)  
 
 ---
 
-## Tech Stack
+## **Tech Stack**
 
 **Languages & Libraries**:  
 - Python, Pandas, NumPy  
-- scikit-learn, TensorFlow/Keras  
+- scikit-learn, TensorFlow / Keras  
 - Matplotlib, Seaborn  
 - Streamlit (Deployment)  
 
 **Techniques**:  
-- ANN (Artificial Neural Network)  
-- Feature Scaling  
-- Model Evaluation  
-- EDA  
-- Streamlit Deployment  
+- ANN (Artificial Neural Network with Dense & Dropout layers)  
+- Feature Scaling & Label Encoding  
+- EarlyStopping for regularization  
+- Streamlit Deployment for real-time predictions  
